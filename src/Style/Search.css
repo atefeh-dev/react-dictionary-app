@@ -23,7 +23,7 @@ svg {
   align-items: center; /* <---- NEW    */
 
   width: 80%;
-  line-height: 2.7em;
+  line-height: 2.5em;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 
@@ -33,9 +33,11 @@ svg {
   background-color: #f59834;
   border-color: #fafafa;
   border-radius: 1px 30px 30px 1px;
-  margin-left: -1px;
+  margin-left: -2px;
   color: #eff1f1;
-  padding: 14px;
+  padding: 2px;
+  width: 14%;
+  height: 13%;
 }
 @media (max-width: 567px) {
   .button-container {

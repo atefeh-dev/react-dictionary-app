@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+
 import "../Style/Search.css";
 
 const Search = () => {
@@ -40,11 +41,9 @@ const Search = () => {
           <div className="col-9 my-auto">
             <div className="search-input-container d-flex justify-content-center my-auto">
               <input type="text" className="search-input " />{" "}
-              <input
-                type="button"
-                className="button-container"
-                value="search"
-              />
+              <button type="button" className="button-container">
+                <i class="fas fa-search fa-2x"></i>
+              </button>
             </div>
           </div>
         </div>
