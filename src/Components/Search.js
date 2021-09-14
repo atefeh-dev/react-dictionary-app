@@ -9,7 +9,7 @@ const Search = () => {
     <div className="container-fluid mt-5  header">
       <div className="search">
         <div className="row">
-          <div className="col-3">
+          <div className="col-3 my-auto ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 119 54"
@@ -39,11 +39,27 @@ const Search = () => {
             </svg>
           </div>
           <div className="col-9 my-auto">
-            <div className="search-input-container d-flex justify-content-center my-auto">
-              <input type="text" className="search-input " />{" "}
-              <button type="button" className="button-container">
-                <i class="fas fa-search fa-2x"></i>
-              </button>
+            <div className="wrapper">
+              <div className="searchBar">
+                <input
+                  id="searchQueryInput"
+                  type="text"
+                  name="searchQueryInput"
+                  placeholder="Search"
+                  value=""
+                />
+                <button
+                  id="searchQuerySubmit"
+                  type="submit"
+                  name="searchQuerySubmit">
+                  <svg viewBox="0 0 24 24" id="small">
+                    <path
+                      fill="#F5F2F2"
+                      d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
