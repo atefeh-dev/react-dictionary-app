@@ -1,10 +1,15 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 
 import "../Style/Search.css";
 
 const Search = () => {
+  const [term, setTerm] = useState(null);
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+    console.log(term);
+  };
   return (
     <div className="container-fluid mt-5  header">
       <div className="search">
@@ -39,14 +44,14 @@ const Search = () => {
             </svg>
           </div>
           <div className="col-9 my-auto">
-            <div className="wrapper">
+            <form onSubmit={onFormSubmit}>
               <div className="searchBar">
                 <input
                   id="searchQueryInput"
                   type="text"
                   name="searchQueryInput"
-                  placeholder="Search"
-                  value=""
+                  placeholder="Search ..."
+                  onChange={(e) => setTerm(e.target.value)}
                 />
                 <button
                   id="searchQuerySubmit"
@@ -60,7 +65,7 @@ const Search = () => {
                   </svg>
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
