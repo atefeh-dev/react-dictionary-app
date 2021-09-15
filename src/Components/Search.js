@@ -10,7 +10,7 @@ const Search = () => {
   const [term, setTerm] = useState(null);
   const onFormSubmit = (e) => {
     e.preventDefault();
-    dictionaryApi.get(`/${term}`).then((res) => console.log(res));
+    dictionaryApi.get(`/${term}`).then((res) => console.log(res.data));
   };
   return (
     <div className="container-fluid mt-5  header">
