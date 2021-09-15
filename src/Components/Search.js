@@ -1,6 +1,8 @@
 /** @format */
 
+import axios from "axios";
 import React, { useState } from "react";
+import dictionaryApi from "../Apis/dictionaryApi";
 
 import "../Style/Search.css";
 
@@ -8,7 +10,7 @@ const Search = () => {
   const [term, setTerm] = useState(null);
   const onFormSubmit = (e) => {
     e.preventDefault();
-    console.log(term);
+    dictionaryApi.get(`/${term}`).then((res) => console.log(res));
   };
   return (
     <div className="container-fluid mt-5  header">
