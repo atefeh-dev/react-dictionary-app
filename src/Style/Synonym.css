@@ -1,0 +1,17 @@
+/** @format */
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 16px;
+  color: #3790ce;
+  margin: -46px;
+}
+li {
+  align-self: center;
+}
+.syn {
+  color: #f59834;
+  margin-left: -12px;
+}

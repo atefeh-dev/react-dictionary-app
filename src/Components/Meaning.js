@@ -2,8 +2,8 @@
 
 import React from "react";
 import "../Style/Meaning.css";
+import Synonyms from "../Components/Synonyms";
 const Meaning = ({ meaning }) => {
-  console.log(meaning);
   const renderList = meaning.definitions.map((definition, index) => {
     return (
       <div key={index}>
@@ -11,6 +11,7 @@ const Meaning = ({ meaning }) => {
           <div className="col-md-8 mt-2 mb-1" id="meaning">
             {definition.definition}
             <p className="w-80 mt-1">{definition.example}</p>
+            <Synonyms synonym={definition.synonyms} />
           </div>
           <div className="col-md-2 mt-2 " id="pos">
             {" "}
