@@ -6,7 +6,7 @@ import Synonyms from "../Components/Synonyms";
 const Meaning = ({ meaning }) => {
   const renderList = meaning.definitions.map((definition, index) => {
     return (
-      <div key={index}>
+      <div key={index} className="sex">
         <div className="row  gx-5 my-auto ">
           <div className="col-md-8 mt-2 mb-1" id="meaning">
             {definition.definition}

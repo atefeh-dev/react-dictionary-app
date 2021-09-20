@@ -6,7 +6,7 @@ ul {
   list-style: none;
   font-size: 16px;
   color: #3790ce;
-  margin-left: -39px;
+  margin-left: -40px;
 }
 li {
   align-self: center;
@@ -14,4 +14,9 @@ li {
 .syn {
   color: #f59834;
   margin-left: -12px;
+}
+@media (max-width: 576px) {
+  ul {
+    margin-left: -38px;
+  }
 }
