@@ -15,8 +15,13 @@ li {
   color: #f59834;
   margin-left: -12px;
 }
-@media (max-width: 576px) {
+@media (max-width: 997px) {
   ul {
     margin-left: -38px;
+    font-size: 12px;
   }
+  #block {
+    font-size: 32px;
+  }
+  
 }

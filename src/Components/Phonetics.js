@@ -8,7 +8,7 @@ const Phonetics = ({ phonetic }) => {
   const [play] = useSound(phonetic.audio);
 
   return (
-    <div>
+    <div id="ps">
       <span className="sound-text ">{phonetic.text}</span>{" "}
       <button onClick={play} id="sb">
         {" "}

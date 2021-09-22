@@ -8,7 +8,7 @@ const Meaning = ({ meaning }) => {
     return (
       <div key={index} className="sex">
         <div className="row  gx-5 my-auto ">
-          <div className="col-md-8 mt-2 mb-1" id="meaning" key={index}>
+          <div className="col-md-10 mt-2 mb-1" id="meaning" key={index}>
             {definition.definition}
             <p className="w-80 mt-1">{definition.example}</p>
             <Synonyms synonym={definition.synonyms} />
@@ -17,7 +17,6 @@ const Meaning = ({ meaning }) => {
             {" "}
             {meaning.partOfSpeech}
           </div>
-          <div className="col-md-2"> </div>
         </div>
       </div>
     );

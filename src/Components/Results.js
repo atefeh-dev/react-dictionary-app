@@ -7,8 +7,8 @@ import Phonetic from "../Components/Phonetics";
 const Result = ({ data }) => {
   if (data) {
     return (
-      <div>
-        <section className="container" id="block">
+      <div className="container">
+        <section id="block">
           <div className="row" id="sex">
             <div className="col-2 my-auto">
               {" "}

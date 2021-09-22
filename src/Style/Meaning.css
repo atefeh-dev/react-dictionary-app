@@ -52,7 +52,8 @@ p {
   line-height: 17px;
   text-align: center;
 }
-@media (max-width: 576px) {
+
+@media (max-width: 765px) {
   #pos {
     margin-left: 30px;
     text-align: left;
