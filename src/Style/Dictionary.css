@@ -1,1 +1,22 @@
 /** @format */
+body {
+  text-transform: capitalize;
+}
+.sound-text {
+  margin-top: 25px;
+  margin-left: -5px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Lucida Grande";
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 0;
+  line-height: 17px;
+  border-bottom: 1px dashed #298cd1;
+  position: absolute;
+}
+#sb {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  width: 0;
+}
