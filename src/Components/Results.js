@@ -5,21 +5,24 @@ import Meaning from "../Components/Meaning";
 import Phonetic from "../Components/Phonetics";
 import PexelsApi from "../Apis/PexelsApi";
 
-const Result = ({ data }) => {
+const Result = ({ data, word }) => {
   const [images, setImages] = useState(null);
 
   const searchWord = async () => {
     await PexelsApi.get("/search", {
       params: {
-        query: data.word,
+        query: word,
       },
     }).then((res) => {
-      setImages(res.data.photos);
+      console.log(res.data.photos);
     });
   };
-  if (data) {
-    searchWord();
 
+  useEffect(() => {
+    searchWord();
+  }, [word]);
+
+  if (data) {
     return (
       <div className="container">
         <section id="block">

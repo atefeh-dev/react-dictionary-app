@@ -74,7 +74,7 @@ const Search = () => {
           </div>
         </div>
       </div>
-      <Result data={result} />
+      <Result data={result} word={term} />
     </div>
   );
 };

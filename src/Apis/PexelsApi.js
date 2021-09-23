@@ -5,6 +5,6 @@ const baseURL = "https://api.pexels.com/v1/";
 export default axios.create({
   baseURL,
   headers: {
-    Authorization: `Bearer ${apiKey}`,
+    Authorization: apiKey,
   },
 });
