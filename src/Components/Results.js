@@ -1,11 +1,26 @@
 /** @format */
 
-import React from "react";
+import React , {useEffect} from "react";
 import Meaning from "../Components/Meaning";
 import Phonetic from "../Components/Phonetics";
+import PexelsApi from "../Apis/PexelsApi";
 
 const Result = ({ data }) => {
-  if (data) {
+
+  if (data)
+  {
+    const searchWord = async () => {
+      await PexelsApi
+        .get("/search", {
+          params: {
+            query: data.word,
+          },
+        })
+        .then((res) => {
+          console.log(res.data);
+        })
+    }
+      searchWord()
     return (
       <div className="container">
         <section id="block">

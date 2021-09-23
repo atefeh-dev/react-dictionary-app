@@ -18,10 +18,9 @@ li {
 @media (max-width: 997px) {
   ul {
     margin-left: -38px;
-    font-size: 12px;
+    font-size: 15px;
   }
   #block {
     font-size: 32px;
   }
-  
 }

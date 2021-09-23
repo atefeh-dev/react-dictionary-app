@@ -4,7 +4,6 @@ import React from "react";
 import useSound from "use-sound";
 
 const Phonetics = ({ phonetic }) => {
-  console.log(phonetic);
   const [play] = useSound(phonetic.audio);
 
   return (
