@@ -17,10 +17,9 @@ const Result = ({ data }) => {
       setImages(res.data.photos);
     });
   };
-  useEffect(() => {
-    searchWord();
-  }, [data]);
   if (data) {
+    searchWord();
+
     return (
       <div className="container">
         <section id="block">
@@ -54,6 +53,8 @@ const Result = ({ data }) => {
         </section>
       </div>
     );
-  } else return null;
+  } else {
+    return null;
+  }
 };
 export default Result;
