@@ -2,23 +2,21 @@
 
 ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style: none;
   font-size: 16px;
   color: #3790ce;
-  margin-left: -118px;
 }
 li {
   align-self: center;
 }
 .syn {
   color: #f59834;
-  margin-left: -12px;
 }
 @media (max-width: 997px) {
   ul {
     margin-left: -38px;
-    font-size: 15px;
+    font-size: 13px;
   }
   #block {
     font-size: 32px;
