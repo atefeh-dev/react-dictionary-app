@@ -3,25 +3,8 @@
 import React, { useState, useEffect } from "react";
 import Meaning from "../Components/Meaning";
 import Phonetic from "../Components/Phonetics";
-import PexelsApi from "../Apis/PexelsApi";
 
-const Result = ({ data, word }) => {
-  const [images, setImages] = useState(null);
-
-  const searchWord = async () => {
-    await PexelsApi.get("/search", {
-      params: {
-        query: word,
-      },
-    }).then((res) => {
-      console.log(res.data.photos);
-    });
-  };
-
-  useEffect(() => {
-    searchWord();
-  }, [word]);
-
+const Result = ({ data }) => {
   if (data) {
     return (
       <div className="container">
@@ -43,12 +26,13 @@ const Result = ({ data, word }) => {
             </div>
           </div>
         </section>
+
         <section>
           {data.meanings.map((meaning, index) => {
             return (
               <div key={index}>
                 <section className="container" key={index}>
-                  <Meaning meaning={meaning} images={images} />
+                  <Meaning meaning={meaning} />
                 </section>
               </div>
             );
