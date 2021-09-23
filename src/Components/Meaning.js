@@ -3,7 +3,8 @@
 import React from "react";
 import "../Style/Meaning.css";
 import Synonyms from "../Components/Synonyms";
-const Meaning = ({ meaning }) => {
+const Meaning = ({ meaning, images }) => {
+  console.log(images);
   const renderList = meaning.definitions.map((definition, index) => {
     return (
       <div key={index} className="sex">
