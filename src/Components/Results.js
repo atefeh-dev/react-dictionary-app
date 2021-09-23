@@ -1,10 +1,11 @@
 /** @format */
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Meaning from "../Components/Meaning";
 import Phonetic from "../Components/Phonetics";
+import Images from "./Images";
 
-const Result = ({ data }) => {
+const Result = ({ data, images }) => {
   if (data) {
     return (
       <div className="container">
@@ -25,6 +26,9 @@ const Result = ({ data }) => {
               })}
             </div>
           </div>
+        </section>
+        <section className="container">
+          <Images images={images} />
         </section>
 
         <section>

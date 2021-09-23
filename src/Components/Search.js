@@ -22,7 +22,7 @@ const Search = () => {
         query: term,
       },
     }).then((res) => {
-      console.log(res);
+      setImages(res.data.photos);
     });
   };
   const load = () => {
@@ -33,7 +33,8 @@ const Search = () => {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
-    load();
+    findMeans();
+    findImages();
   };
 
   if (loaded) {
